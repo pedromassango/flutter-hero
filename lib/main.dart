@@ -45,7 +45,10 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Column(
         children: <Widget>[
           Spacer(),
-          Image.asset('images/icon_like.png'),
+          Hero(
+            tag: 'logo',
+            child: Image.asset('images/icon_like.png'),
+          ),
           Spacer(),
           MaterialButton(child: Text('Next Screen'),
           textColor: Colors.white,
