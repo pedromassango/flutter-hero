@@ -12,10 +12,21 @@ class _SecondScreenState extends State<SecondScreen>{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hero Page 2'),
-        leading: Hero(
+        backgroundColor: Colors.white30,
+        elevation: 0.0,
+        title: Text('Hero Page 2',
+        style: TextStyle(
+          color: Colors.black
+        ),),
+      ),
+      body: Padding(
+          padding: EdgeInsets.only(left: 32.0, top: 16.0),
+        child: Hero(
           tag: 'logo',
-          child: Image.asset('images/icon_like.png'),
+          child: Image.asset('images/icon_like.png',
+          width: 50.0,
+          height: 50.0,
+          ),
         ),
       ),
     );
